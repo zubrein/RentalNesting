@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="xit.zubrein.accomodation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".dagger.BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaseApplicationBuild"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".ui.payment.PaymentActivity"></activity>
+        <activity android:name=".ui.bookings.MyBookingsActivity" />
+        <activity android:name=".ui.auth.RegistrationActivity" />
+        <activity android:name=".ui.appartment.ApartmentDetailsActivity" />
+        <activity android:name=".ui.search.LocationSearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.auth.FormActivity" />
+        <activity android:name=".ui.auth.OtpActivity" />
+        <activity android:name=".ui.auth.LoginActivity" />
+        <activity android:name=".ui.appartment.ApartmentListActivity" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity android:name=".Splash" />
+        <activity android:name=".ui.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
